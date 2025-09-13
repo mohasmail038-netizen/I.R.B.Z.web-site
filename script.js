@@ -1,10 +1,6 @@
-// تأثير بسيط: إظهار العناوين وحدة وحدة عند تحميل الصفحة
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  sections.forEach((sec, i) => {
-    setTimeout(() => {
-      sec.style.opacity = "1";
-      sec.style.transform = "translateY(0)";
-    }, 500 * i);
-  });
+// تفاعل بسيط مع الفورم
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("تم إرسال رسالتك بنجاح! شكرا لتواصلك مع اتحاد الزمالة.");
+  this.reset();
 });

@@ -1,99 +1,117 @@
-/* Reset */
-* {
+body {
+  font-family: "Tahoma", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Tahoma", sans-serif;
-}
-
-body {
-  background-color: #d6ecff; /* أزرق فاتح */
-  color: #222;
+  background: #f8f8f8;
+  color: #333;
   line-height: 1.6;
 }
 
 header {
-  background: #1e90ff;
+  background: #004080;
   color: #fff;
+  padding: 20px 10px;
   text-align: center;
-  padding: 20px;
-  position: relative;
 }
 
-header img {
-  width: 120px;
+header .logo img {
+  width: 80px;
   height: auto;
-  display: block;
-  margin: 0 auto 10px;
-  animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
-  font-size: 28px;
-  margin-bottom: 5px;
-  animation: slideDown 1.5s ease-in-out;
+  margin: 10px 0 5px;
 }
 
-header p {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-nav {
-  background: #0d6efd;
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 10px;
+  flex-wrap: wrap;
 }
 
-nav a {
+header nav ul li {
+  margin: 5px 10px;
+}
+
+header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
 }
 
-nav a:hover {
-  color: yellow;
-}
-
-main {
-  padding: 20px;
+.section {
+  padding: 40px 20px;
   text-align: center;
-}
-
-section {
-  margin: 30px 0;
-  padding: 20px;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 1s ease;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-footer {
-  background: #1e90ff;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
+.section h2 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.main-img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
   margin-top: 20px;
 }
 
-footer img {
-  width: 60px;
-  margin-bottom: 5px;
+.player-list {
+  list-style: none;
+  padding: 0;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-@keyframes slideDown {
-  from {transform: translateY(-20px); opacity: 0;}
-  to {transform: translateY(0); opacity: 1;}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background: #004080;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+  margin-top: 20px;
 }
