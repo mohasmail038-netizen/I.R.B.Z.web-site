@@ -1,117 +1,88 @@
+/* إعدادات عامة */
 body {
   font-family: "Tahoma", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f8f8;
+  background: #f9f9f9;
   color: #333;
-  line-height: 1.6;
+  text-align: center;
 }
 
+/* الهيدر */
 header {
-  background: #004080;
-  color: #fff;
-  padding: 20px 10px;
-  text-align: center;
+  background: #3399ff; /* أزرق فاتح */
+  color: white;
+  padding: 15px 0;
 }
 
-header .logo img {
-  width: 80px;
-  height: auto;
-}
-
-header h1 {
-  margin: 10px 0 5px;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-header nav ul li {
-  margin: 5px 10px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.section {
-  padding: 40px 20px;
-  text-align: center;
-  background: #fff;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.section h2 {
-  color: #004080;
-  margin-bottom: 20px;
-}
-
-.main-img {
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.player-list {
-  list-style: none;
-  padding: 0;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-
-table th {
-  background: #004080;
-  color: #fff;
-}
-
-form {
+header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-form input, form textarea {
-  width: 80%;
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* الأقسام */
+.section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* الفورم */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea {
   padding: 10px;
-  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 form button {
-  padding: 10px 20px;
-  background: #004080;
-  color: #fff;
+  background: #3399ff;
+  color: white;
   border: none;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #222;
-  color: #fff;
-  margin-top: 20px;
+#ww{
+  background-color: black;
+  color: white;
 }
