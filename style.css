@@ -1,7 +1,7 @@
 body{
 margin:0;
 font-family:Tahoma;
-background:#f5f5f5;
+background:#ffffff;
 }
 
 header{
@@ -17,23 +17,23 @@ width:130px;
 
 h2{
 color:#1e90ff;
+text-align:center;
 }
 
 .home{
-background:white;
+background:#f2f2f2;
 padding:40px;
 text-align:center;
 }
 
 .welcome-text{
 background:#ffcc00;
+color:#1e90ff;
 padding:15px;
-color:#1e90ff;   /* أزرق فاتح بدل كحل */
-font-size:18px;
 border-radius:10px;
+font-size:18px;
 font-weight:bold;
 }
-
 
 section{
 padding:30px;
@@ -48,41 +48,63 @@ gap:15px;
 .card{
 background:white;
 padding:10px;
-border-radius:10px;
-box-shadow:0 0 5px gray;
+border-radius:12px;
+box-shadow:0 0 8px rgba(0,0,0,0.2);
 text-align:center;
 }
 
 .card img{
 width:100%;
-height:auto;
-max-height:220px;
-object-fit:contain;   /* تخلي الصورة تبان كاملة */
-background:#000;      /* إطار خفيف */
+height:180px;
+object-fit:cover;
 border-radius:10px;
 }
 
+/* صور الفئات */
+.card.wide img{
+height:auto;
+max-height:230px;
+object-fit:contain;
+background:black;
+}
+
+/* جدول */
+.table-box{
+overflow-x:auto;
 }
 
 table{
 width:100%;
+min-width:600px;
 border-collapse:collapse;
 background:white;
 }
 
+th{
+background:#1e90ff;
+color:white;
+}
+
 th,td{
 border:1px solid #ccc;
-padding:10px;
+padding:12px;
 text-align:center;
 }
 
+/* تواصل */
 .social{
 display:flex;
 justify-content:center;
-gap:20px;
+gap:25px;
 }
 
 .social img{
 width:60px;
 }
 
+footer{
+background:#000;
+color:#ffcc00;
+text-align:center;
+padding:15px;
+}
