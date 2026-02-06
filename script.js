@@ -1,1 +1,1 @@
-console.log("IRBZ site ready");
+console.log("IRBZ Website Loaded");
